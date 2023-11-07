@@ -23,5 +23,13 @@ def sem1of1():
 def sem2of1():
     return render_template("sem1-2.html", title = "Semester 1.2")
 
+@app.route("/sem1of2")
+def sem1of2():
+    return render_template("sem2-1.html", title = "Semester 2.1")
+
+@app.route("/sem2of2")
+def sem2of2():
+    return render_template("sem2-2.html", title = "Semester 2.2")
+
 if __name__ == "__main__":
     app.run(debug = True)
