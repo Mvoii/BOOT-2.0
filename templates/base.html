@@ -31,17 +31,19 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="manifest" href="{{ url_for("static", filename="images/site.webmanifest") }}">
+    <!--add custom css files here-->
+    {% block style %}{% endblock %}
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">Bsc. <span>CS</span></a>
+                <a href="{{ url_for("home") }}">Bsc. <span>CS</span></a>
               </div>
             <ul class="nav justify-content-end nav nav-underline">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="{{ url_for("home") }}">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="check.html">News</a>
@@ -60,31 +62,7 @@
             </div>
         </nav>
     </header>
-    <section class="home_content" id="home_content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="column left">
-            <div class="text-1">Welcome to</div>
-            <div class="text-2">KABU CS HUB</div>
-            <div class="text-3">
-                <p>
-                    Unleash potential with comprehensive materials for all years. 
-                    Access notes, past papers, and resources. 
-                    Excel in computer science on our learning journey.
-                </p>
-            </div>
-            <div class="buttons">
-                <a href="#sem_content">Course Semesters</a>
-                <a href="#">Web Help</a>
-            </div>  
-        </div>
-                </div>
-                <div class="col-sm-12 col-md-6"></div>
-            </div>
-        </div>
-    </section>
-
+    
     <!--add body content here-->
     {% block content %}
 
