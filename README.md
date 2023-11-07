@@ -1,4 +1,4 @@
 # BOOT-2.0 - a webapp made for KABU CS students
-	- it contains course notes together with past exam papers
- 	- access to the university moodle and schedule
+	- it contains course notes and past exam papers
+ 	- links to youtube videos on related topic
 	- provide safe login using student email given by the university
