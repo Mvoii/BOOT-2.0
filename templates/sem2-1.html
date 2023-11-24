@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+{% extends "base-sem-page.html" %}
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+{% block title %}
+    <title>Semester 2.1</title>
+{% endblock %}
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -28,12 +31,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
 
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
-<body>
+<body>-->
+{% block content %}
   <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="#">Semester <span>2.2</span></a>
+            <a href="#">Semester <span>2.1</span></a>
           </div>
         <ul class="nav justify-content-end nav nav-underline">
             <li class="nav-item">
@@ -63,10 +71,10 @@
       <div class="col-sm-12 col-md-4">
         <div class="notes-card">
           <div class="notes-unit justify-content-center align-items-center">
-            <div class="icon"><i class="fa-solid fa-microchip"></i></div>
-            <h3 class="unit-name">COMP 110</h3>
+            <div class="icon"><i class="fa-solid fa-plug"></i></div>
+            <h3 class="unit-name">COMP 213</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="#" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -75,9 +83,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <h3 class="unit-name">COMP 112</h3>
+            <h3 class="unit-name">COMP 214</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="notes/Data Structures and Algorithms_ USING C.pdf" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -85,10 +93,10 @@
       <div class="col-sm-12 col-md-4">
         <div class="notes-card">
           <div class="notes-unit">
-            <div class="icon"><i class="fa-solid fa-comments"></i></div>
-            <h3 class="unit-name">COMS 110</h3>
+            <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3 class="unit-name">COMP 215</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="notes/COMP 215 - OOP with C++ - Class Notes.pdf" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -99,9 +107,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-calculator"></i></div>
-            <h3 class="unit-name">MATH 110</h3>
+            <h3 class="unit-name">COMP 216</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="notes/OS-2020-Presentation_compressed.pdf" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -110,9 +118,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-vector-square"></i></div>
-            <h3 class="unit-name">MATH 111</h3>
+            <h3 class="unit-name">MATH 211</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="notes/linear_algebra[1]_compressed.pdf" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -121,9 +129,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-gears"></i></div>
-            <h3 class="unit-name">PHYS 110</h3>
+            <h3 class="unit-name">MATH 121</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="#" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -134,9 +142,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-cross"></i></div>
-            <h3 class="unit-name">BIBL 110</h3>
+            <h3 class="unit-name">BIBL 210</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Notes</a>
+              <a href="notes/BIBL 210 -REVISED NOTES-2021.pdf" download>Download Notes</a>
             </div>
           </div>
         </div>
@@ -151,10 +159,10 @@
       <div class="col-sm-12 col-md-4">
         <div class="notes-card">
           <div class="notes-unit">
-            <div class="icon"><i class="fa-solid fa-comments"></i></div>
-            <h3 class="unit-name">COMP 110</h3>
+            <div class="icon"><i class="fa-solid fa-plug"></i></div>
+            <h3 class="unit-name">COMP 213</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/COMP 213 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -163,9 +171,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <h3 class="unit-name">COMP 112</h3>
+            <h3 class="unit-name">COMP 214</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/COMP 214 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -173,10 +181,10 @@
       <div class="col-sm-12 col-md-4">
         <div class="notes-card">
           <div class="notes-unit">
-            <div class="icon"><i class="fa-solid fa-comments"></i></div>
-            <h3 class="unit-name">COMS 110</h3>
+            <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3 class="unit-name">COMP 215</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/COMP 215 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -187,9 +195,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-calculator"></i></div>
-            <h3 class="unit-name">MATH 110</h3>
+            <h3 class="unit-name">COMP 216</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/COMP 216 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -198,9 +206,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-vector-square"></i></div>
-            <h3 class="unit-name">MATH 111</h3>
+            <h3 class="unit-name">MATH 211</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/MATH 211 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -209,9 +217,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-gears"></i></div>
-            <h3 class="unit-name">PHYS 110</h3>
+            <h3 class="unit-name">MATH 121</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/MATH 121 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -222,9 +230,9 @@
         <div class="notes-card">
           <div class="notes-unit">
             <div class="icon"><i class="fa-solid fa-cross"></i></div>
-            <h3 class="unit-name">BIBL 110</h3>
+            <h3 class="unit-name">BIBL 210</h3>
             <div class="button">
-              <a href="files/BIBL 110 NOTES JAN 2022.docx" download>Download Past Papers</a>
+              <a href="notes/BIBL 210 PAST PAPERS.pdf" download>Download Past Papers</a>
             </div>
           </div>
         </div>
@@ -238,31 +246,31 @@
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://img.youtube.com/vi/zOjov-2OZ0E/0.jpg" class="card-img-top" alt="Video Thumbnail 1">
+          <img src="https://img.youtube.com/vi/6WUjbJEeJwM/0.jpg" class="card-img-top" alt="Video Thumbnail 1">
           <div class="card-body">
-            <h5 class="card-title">Introduction to Programming and Computer Science - Full Course</h5>
+            <h5 class="card-title">Calculus 1 - Integration & Antiderivatives</h5>
             <p class="card-text"></p>
-            <a href="https://www.youtube.com/watch?v=zOjov-2OZ0E" class="btn" target="_blank">Watch Now</a>
+            <a href="https://www.youtube.com/watch?v=6WUjbJEeJwM" class="btn" target="_blank">Watch Now</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://img.youtube.com/vi/2_21erD-nBg/0.jpg" class="card-img-top" alt="Video Thumbnail 1">
+          <img src="https://img.youtube.com/vi/AT14lCXuMKI/0.jpg" class="card-img-top" alt="Video Thumbnail 1">
           <div class="card-body">
-            <h5 class="card-title">Calculus 3 - Intro To Vectors</h5>
+            <h5 class="card-title">1.1 Arrays in Data Structure | Declaration, Initialization, Memory representation</h5>
             <p class="card-text"></p>
-            <a href="https://www.youtube.com/watch?v=2_21erD-nBg" class="btn" target="_blank">Watch Now</a>
+            <a href="https://www.youtube.com/watch?v=AT14lCXuMKI&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&index=1&t=1s" class="btn" target="_blank">Watch Now</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://img.youtube.com/vi/VVaOj2zvl0o/0.jpg" class="card-img-top" alt="Video Thumbnail 1">
+          <img src="https://img.youtube.com/vi/JnTa9XtvmfI/0.jpg" class="card-img-top" alt="Video Thumbnail 1">
           <div class="card-body">
-            <h5 class="card-title">BPY1103: ELECRICITY AND MAGNETISM 1</h5>
+            <h5 class="card-title">Linear Algebra - Full College Course</h5>
             <p class="card-text"></p>
-            <a href="https://www.youtube.com/watch?v=nxZ2hEeVgFU" class="btn" target="_blank">Watch Now</a>
+            <a href="https://www.youtube.com/watch?v=JnTa9XtvmfI" class="btn" target="_blank">Watch Now</a>
           </div>
         </div>
       </div>
@@ -270,9 +278,9 @@
   </div>
   
 </section>
-<footer>
+<!--<footer>
   <span>Created By <a href="#">Esiepe Owen</a> |
-    <span class="far fa-copyright"></span> 2022 All Rights Reserved.</span>
+    <span class="far fa-copyright"></span> 2023 All Rights Reserved.</span>
   <div class="follow">
     <a href="https://web.facebook.com/esi3pe/" class="fab fa-facebook-f" target="_blank"></a>
     <a href="https://twitter.com/EsiepeO" class="fab fa-twitter" target="_blank"></a>
@@ -284,4 +292,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>-->
+{% endblock %}
